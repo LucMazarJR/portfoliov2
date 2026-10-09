@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import AppHeader from "../components/layout/AppHeader.astro";
+import Font from "astro/components/Font.astro";
 ---
 
 <!doctype html>
@@ -10,6 +11,7 @@ import AppHeader from "../components/layout/AppHeader.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+		<Font cssVariable="--font-unbounded" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Luciano Mazarão Jr | Desenvolvedor em franca</title>
 	</head>
@@ -25,5 +27,7 @@ import AppHeader from "../components/layout/AppHeader.astro";
 		margin: 0;
 		width: 100%;
 		height: 100%;
-	}
+		font-family: var(--font-unbounded);
+	},
+	
 </style>

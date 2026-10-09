@@ -1,3 +1,7 @@
+---
+import AppHeader from "../components/layout/AppHeader.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,9 +10,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Luciano Mazarão Jr | Desenvolvedor em franca</title>
 	</head>
 	<body>
+		<AppHeader />
 		<slot />
 	</body>
 </html>
